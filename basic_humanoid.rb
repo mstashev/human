@@ -11,4 +11,8 @@ module BasicHumanoid
     "I would walk #{miles} miles ..."
   end
 
+  def kill(other)
+    other.kill! if other.to_a? Human
+  end
+
 end
