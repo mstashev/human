@@ -12,7 +12,11 @@ module BasicHumanoid
   end
 
   def kill(other)
-    other.kill! if other.to_a? Human
+    other.kill! if [Human, Dog].include? other.class
+  end
+
+  def leg_number
+    2
   end
 
 end

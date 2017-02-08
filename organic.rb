@@ -17,4 +17,5 @@ module Organic
   def kill!
     @heartbeat = false
   end
+  
 end
